@@ -1,0 +1,88 @@
+===============================
+   HTTP IN DETAIL - NOTES
+===============================
+
+1. WHAT IS HTTP(S)?
+-------------------
+Full Form: HyperText Transfer Protocol
+Kaam: Browser aur Server ke beech baat karne ka rule
+
+HTTP = Not Secure, Port 80
+HTTPS = Secure + Encrypted, Port 443
+S = Secure/SSL/TLS
+
+2. REQUESTS AND RESPONSES
+-------------------------
+Client = Browser, tera laptop
+Server = Website ka computer
+
+Flow: Client Request → Server → Server Response → Client
+
+Request mein hota hai: URL, Method, Headers, Body
+Response mein hota hai: Status Code, Headers, Body
+
+3. HTTP METHODS - Important
+---------------------------
+GET    = Data maangna, page load karna. URL mein data jata hai
+POST   = Data bhejna, form submit. Body mein data jata hai
+PUT    = Data update karna, poora record
+DELETE = Data delete karna
+PATCH  = Data update karna, sirf kuch part
+
+Hacking mein: POST se login bypass, GET se data leak
+
+4. HTTP STATUS CODES
+--------------------
+1xx = Info: Request received
+2xx = Success: 
+      200 OK = Sab sahi
+      201 Created = Naya record ban gaya
+3xx = Redirect:
+      301 Moved Permanently
+      302 Found / Temporary Redirect
+4xx = Client Error:
+      400 Bad Request
+      401 Unauthorized = Login chahiye
+      403 Forbidden = Access nahi hai
+      404 Not Found = Page nahi mila
+5xx = Server Error:
+      500 Internal Server Error
+      503 Service Unavailable
+
+5. HEADERS
+----------
+Request Headers:
+User-Agent = Browser ka naam
+Host = Website ka domain
+Cookie = Login session data
+Referer = Kahan se aaye ho
+
+Response Headers:
+Set-Cookie = Browser ko cookie dega
+Content-Type = text/html, application/json
+Server = Apache, Nginx
+
+6. COOKIES
+----------
+Kaam: User ko yaad rakhna
+Store: Browser mein save hote hain
+Example: Login ke baad baar baar password nahi maangta
+
+Hacking mein: Cookie steal = Session Hijacking
+Flag: HttpOnly, Secure
+
+7. MAKING REQUESTS
+------------------
+Tools: Browser, curl, Burp Suite, Postman
+curl example: curl -X GET http://site.com
+
+===============================
+   EXAM KE LIYE 1-LINER
+===============================
+HTTP = Browser-Server ki language
+GET = Data lo, POST = Data do
+200 = OK, 404 = Not Found, 500 = Server Error
+HTTPS = HTTP + Encryption, Port 443
+Cookie = User ko yaad rakhne ke liye
+Header = Request/Response ka extra info
+===============================
