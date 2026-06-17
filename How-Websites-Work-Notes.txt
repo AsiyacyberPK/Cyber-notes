@@ -1,0 +1,96 @@
+=========================================
+   HOW WEBSITES WORK - NOTES
+   TryHackMe Pre Security Path
+
+
+TASK 1: HOW WEBSITES WORK
+
+Website ke 3 main hisse:
+
+1. FRONTEND / CLIENT SIDE
+   - Jo user dekhta hai browser mein
+   - Banti hai: HTML + CSS + JavaScript
+   - HTML = Structure/Dhacha
+   - CSS = Styling/Rang-Roop  
+   - JS = Interactive/Jaan daalna
+
+2. BACKEND / SERVER SIDE  
+   - Server pe chalta hai code
+   - Languages: PHP, Python, Node.js, Ruby
+   - Kaam: Logic, Database se baat, User auth
+
+3. DATABASE
+   - Saara data store hota hai
+   - Examples: MySQL, MongoDB, PostgreSQL
+   - Usernames, Passwords, Posts, Products
+
+FLOW: User → Frontend → Backend → Database → Backend → Frontend → User
+
+TASK 2: HTML
+
+Full Form: HyperText Markup Language
+Kaam: Website ka skeleton/structure banana
+
+Important Tags:
+<html> = Poora document
+<head> = Meta info, title
+<body> = Jo dikhta hai page pe
+<h1> to <h6> = Headings
+<p> = Paragraph
+<a href=""> = Link
+<img src=""> = Image
+<form> = User input lena
+<input> = Text box, button
+<div> = Section banane ke liye
+
+Hacking mein: HTML Injection hota hai yahin
+Example: <script>alert(1)</script> daal dena
+
+TASK 3: JAVASCRIPT
+
+Kaam: Website ko interactive banana
+Chalta hai: Browser mein, Client Side pe
+
+Kya kar sakta hai:
+- Button click pe action
+- Form validation
+- Page reload kiye bina data lana - AJAX
+- Cookies read/write karna
+
+Hacking mein: XSS = Cross Site Scripting
+Example: <script>document.location='hacker.com'</script>
+
+Important: Client Side JS ko user dekh aur badal sakta hai
+Isliye Backend validation zaroori hai
+
+TASK 4: SENSITIVE DATA EXPOSURE
+
+Kya hai: Private data galti se public ho jana
+
+Common Examples:
+1. HTML Comments mein password: <!-- admin:12345 -->
+2. JavaScript files mein API keys
+3. robots.txt mein hidden folders
+4. Backup files: backup.zip, .git folder
+5. Error messages mein database info
+
+Kaise bachain:
+- Comments mein sensitive info na daalo
+- API keys backend pe rakho
+- Error messages generic rakho
+- .gitignore use karo
+
+Hacking mein: View Source + Inspect Element se mil jata hai
+
+   EXAM KE LIYE 1-LINER
+
+Website = Frontend + Backend + Database
+HTML = Structure, CSS = Style, JS = Brain
+Client Side = User ke browser mein
+Server Side = Website ke server pe
+Sensitive Data = Comments, JS, Backups mein leak hota hai
+View Source = Ctrl+U se code dekho
+
+Status: 100% Complete ✅
+Next Room: Putting it all together
+
