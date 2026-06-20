@@ -1,0 +1,35 @@
+==================================================
+ROOM: SOPHIA'S SUMMER OF HIDDEN COMPUTERS - NOTES
+==================================================
+
+**Task 1: Introduction**
+- Computers sirf laptop/desktop nahi hote
+- Roz marra ki cheezon mein "hidden computers" hote hain
+- Goal: Real life mein computers ko pehchanna
+
+**Task 2: Sophia's Summer - Month 1**
+- Example 1: Microwave
+    - Small computer = microcontroller
+    - Kaam: Time set karna, power control karna
+- Example 2: Washing Machine  
+    - Sensors: Water level, weight detect karte hain
+    - Programs: Different kapdon ke liye alag settings
+- Key Point: Ye devices input leti hain, process karti hain, output deti hain
+
+**Task 3: Sophia's Summer - Month 2**  
+- Example 3: Car/ECU (Engine Control Unit)
+    - Kaam: Fuel injection, air ratio, engine timing control
+    - Input: Pedal sensor, temperature sensor
+- Example 4: Smart Fridge
+    - Kaam: Temperature maintain, expiry track karna
+    - Internet se connect ho kar groceries order kar sakta
+- Key Point: "Embedded Systems" kehlate hain - specific kaam ke liye bane computers
+
+**Task 4: Why Computers Come in Different Flavors**
+- General Purpose: Laptop/Desktop
+    - Kaam: Har tarah ka kaam kar sakte - net, typing, games
+    - Powerful but zyada bijli khate hain
+- Special Purpose / Embedded: Microwave, Car ECU
+    - Kaam: Sirf 1 kaam karte hain but bahut ache se
+    - Saste, kam bijli, chote hote hain
+- Reason: Har kaam ke liye al
