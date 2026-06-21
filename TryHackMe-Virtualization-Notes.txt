@@ -1,0 +1,51 @@
+TryHackMe Room: Virtualization - Complete Notes
+
+Date: 2026-06-22
+Status: 100% Completed by Asiya ✅
+
+Task 1: Introduction
+
+1. Virtualization ka matlab: 1 computer ke andar bohot saare nakli computer chalana.
+2. Asli computer = Host Machine
+3. Nakli computer = Virtual Machine ya VM
+4. Faida: 1 laptop pe Windows bhi, Kali Linux bhi chala sakte hain.
+5. Example: TryHackMe ka AttackBox bhi 1 VM hai jo browser mein chalti hai.
+
+Task 2: Virtualization Overview  
+
+1. Kyun use karte hain?
+   - Testing ke liye: Virus wali file VM mein khol lo, asli PC safe rahe ga.
+   - Paise bachane ke liye: 5 computer khareedne ki bajaye 1 pe 5 VM bana lo.
+   - Hacking seekhne ke liye: Kali Linux VM mein install karo.
+2. Types: 
+   - Type 1: Bare metal - Direct hardware pe chalta hai. Companies use karti hain.
+   - Type 2: Hosted - Windows ke upar app ki tarah chalta hai. VirtualBox, VMware.
+
+Task 3: Virtualization Components
+
+1. Hypervisor: Ye wo software hai jo VM banata aur chalata hai. 
+   Example: VirtualBox, VMware Workstation
+2. vCPU: VM ko di hui nakli CPU. Asli CPU ka hissa hota hai.
+3. vRAM: VM ko di hui nakli RAM. Asli RAM mein se kat-ti hai.
+4. Virtual Disk: VM ki Hard Drive. 1 file hoti hai jaise .vdi ya .vmdk
+5. Virtual Network: VM ko net se connect karne ka tareeqa. NAT, Bridged.
+
+Important: Agar asli PC mein 4GB RAM hai to VM ko 2GB se zyada mat dena, warna hang ho jaye ga.
+
+Task 4: Managing Virtual Machines
+
+1. Snapshot: VM ki photo kheench lena. Kuch kharab ho jaye to wapis purani haalat pe aa jao.
+   Hacking practice ke liye sab se zaroori.
+2. Clone: VM ki photocopy bana lena. 1 VM set karke 10 copy bana lo.
+3. Start/Stop/Pause: VM ko on, off, pause kar sakte hain.
+4. Settings: VM ki RAM, CPU, Network badal sakte hain jab VM band ho.
+
+Golden Rule: Hacking se pehle Snapshot le lo. Virus chala diya to Snapshot se wapis theek kar lena.
+
+Task 5: Conclusion
+
+1. Virtualization cybersecurity ka base hai.
+2. Sab companies VM use karti hain servers chalane ke liye.
+3. Ghar pe practice ke liye VirtualBox free hai.
+4. TryHackMe ke rooms VM mein hi chalte hain is liye ye samajhna zaroori tha.
+
